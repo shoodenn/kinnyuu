@@ -3,108 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新生活の神コンボ！楽天カード×楽天銀行💳✨</title>
+    <title>20代の自立を支える最強の金融セットアップ | 楽天カード×楽天銀行</title>
+    <!-- Google Fontsの読み込み（モダンで読みやすいNoto Sans JP） -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body { 
-            font-family: 'Hiragino Maru Gothic ProN', 'Meiryo', sans-serif; 
-            background-color: #fff0f5; 
-            color: #333; 
-            line-height: 1.6;
+        :root {
+            /* カラーパレットの定義 */
+            --text-main: #334155;
+            --text-light: #64748B;
+            --bg-color: #F8FAFC;
+            --card-bg: #FFFFFF;
+            --rakuten-red: #E11D48;
+            --rakuten-blue: #2563EB;
+            --accent-green: #10B981;
+        }
+
+        body {
             margin: 0;
-            padding: 20px;
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
         }
-        .container { 
-            max-width: 600px; 
-            margin: 0 auto; 
-            background: white; 
-            padding: 25px; 
-            border-radius: 15px; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
-        }
-        h1 { 
-            color: #ff69b4; 
-            text-align: center; 
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-        p.subtitle {
+
+        /* ヒーローセクション（ファーストビュー） */
+        header {
             text-align: center;
-            font-size: 0.95rem;
-            color: #666;
-            margin-bottom: 30px;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+            border-bottom: 1px solid #E2E8F0;
         }
-        .point-box { 
-            background: #ffe4e1; 
-            padding: 15px 20px; 
-            border-radius: 12px; 
-            margin-bottom: 25px; 
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #0F172A;
+            letter-spacing: -0.05em;
         }
-        h2 { 
-            border-bottom: 2px dashed #ffb6c1; 
-            color: #ff1493; 
-            padding-bottom: 5px; 
-            font-size: 1.2rem;
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* メインコンテンツ枠 */
+        .container {
+            max-width: 800px;
+            margin: -40px auto 60px;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* 各特徴のカード */
+        .feature-section {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 32px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+        }
+
+        .feature-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+            border-bottom: 2px solid #F1F5F9;
+            padding-bottom: 16px;
+        }
+
+        .feature-header h2 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .badge {
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: white;
+            margin-right: 16px;
+        }
+        .badge.red { background-color: var(--rakuten-red); }
+        .badge.blue { background-color: var(--rakuten-blue); }
+
+        /* メリットのリスト */
+        .benefits-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .benefits-list li {
+            position: relative;
+            padding-left: 36px;
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        .benefits-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: -2px;
+            color: var(--accent-green);
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+
+        .highlight {
+            font-weight: 700;
+            color: #0F172A;
+            background: linear-gradient(transparent 70%, #FEF08A 70%);
+        }
+
+        /* コンボメリット（目立たせるセクション） */
+        .synergy-box {
+            background: linear-gradient(135deg, var(--rakuten-blue) 0%, var(--rakuten-red) 100%);
+            color: white;
+            border-radius: 16px;
+            padding: 48px 40px;
+            text-align: center;
+            margin-top: 48px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .synergy-box h3 {
             margin-top: 0;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
         }
-        ul {
-            padding-left: 20px;
+
+        .synergy-box p {
+            font-size: 1.1rem;
+            opacity: 0.95;
             margin-bottom: 0;
         }
-        li {
-            margin-bottom: 10px;
-            font-size: 0.95rem;
+
+        /* CTAボタン（コンバージョン用） */
+        .cta-area {
+            text-align: center;
+            margin: 60px 0;
         }
-        .highlight {
-            font-weight: bold;
-            color: #e60000;
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--rakuten-red);
+            color: white;
+            text-decoration: none;
+            font-size: 1.25rem;
+            font-weight: 700;
+            padding: 24px 64px;
+            border-radius: 50px;
+            box-shadow: 0 10px 15px -3px rgba(225, 29, 72, 0.3);
+            transition: all 0.3s ease;
         }
-        .btn { 
-            display: block; 
-            text-align: center; 
-            background: #ff69b4; 
-            color: white; 
-            padding: 15px; 
-            text-decoration: none; 
-            border-radius: 30px; 
-            font-weight: bold; 
-            margin: 30px 0 10px; 
-            box-shadow: 0 4px 6px rgba(255, 105, 180, 0.3);
-            transition: 0.2s;
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 25px -5px rgba(225, 29, 72, 0.4);
+            background-color: #BE123C;
         }
-        .btn:hover {
-            background: #ff1493;
-            transform: translateY(-2px);
+
+        /* スマホ用レスポンシブ調整 */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.6rem; }
+            .feature-section { padding: 24px; }
+            .feature-header { flex-direction: column; align-items: flex-start; }
+            .badge { margin-bottom: 12px; margin-right: 0; }
+            .synergy-box { padding: 32px 20px; }
+            .cta-button { padding: 20px 40px; width: 80%; box-sizing: border-box; }
         }
     </style>
 </head>
 <body>
+
+    <header>
+        <h1>「自分の力で生きる」ための第一歩。<br>まずは、お金の基盤を整えよう。</h1>
+        <p class="subtitle">実家を出て自立を目指す20代に、圧倒的に支持されている金融セットアップ。それが「楽天カード」と「楽天銀行」の組み合わせです。</p>
+    </header>
+
     <div class="container">
-        <h1>これから一人暮らしする子必見👀✨<br>楽天カード×楽天銀行がガチで最強な理由</h1>
-        <p class="subtitle">実家を出て自立するなら、まじでお金の管理大事！とりあえずこれ作っとけば間違いない「楽天経済圏」デビューについてまとめたよ🫶</p>
-
-        <div class="point-box">
-            <h2>💳 楽天カードが激推しな理由</h2>
-            <ul>
-                <li><span class="highlight">年会費がずっと無料！</span> 持ってるだけでお金かかるクレカとかマジでありえない🙅‍♀️</li>
-                <li><span class="highlight">ポイント還元率1%！</span> 100円で1ポイント貯まるのデカすぎ！コンビニやスーパーの買い物でもサクサク貯まるよ🛒</li>
-                <li><span class="highlight">学生やフリーターにも優しい！</span> 初めてのクレカデビューに超絶おすすめ！</li>
+        
+        <!-- 楽天カードの解説セクション -->
+        <div class="feature-section">
+            <div class="feature-header">
+                <span class="badge red">STEP 1</span>
+                <h2>日常の支払いをすべて最適化する「楽天カード」</h2>
+            </div>
+            <ul class="benefits-list">
+                <li><span class="highlight">年会費は永年無料。</span>維持費ゼロで持てるため、初めてのクレジットカードに最適です。</li>
+                <li>基本還元率1%。コンビニやスーパーなど、<span class="highlight">どこで使っても100円につき1ポイント</span>が貯まります。</li>
+                <li>審査の間口が広く、学生やフリーターからでも自立に向けた「クレジットヒストリー（信用）」を作りやすい設計です。</li>
             </ul>
         </div>
 
-        <div class="point-box">
-            <h2>🏦 楽天銀行も一緒に作ろ！</h2>
-            <ul>
-                <li><span class="highlight">スマホで全部完結！</span> わざわざ店舗に行くとかだるいじゃん？アプリで残高確認も振り込みも一瞬📱</li>
-                <li><span class="highlight">ATM手数料が無料になる！</span> 条件を満たせば、月に何回かタダでおろせるよ💸 無駄な手数料払うのガチでもったいない！</li>
+        <!-- 楽天銀行の解説セクション -->
+        <div class="feature-section">
+            <div class="feature-header">
+                <span class="badge blue">STEP 2</span>
+                <h2>スマホひとつで完結する賢い口座「楽天銀行」</h2>
+            </div>
+            <ul class="benefits-list">
+                <li>店舗に行かず<span class="highlight">アプリで残高確認や振り込みが完結。</span>忙しい新生活の時間を奪いません。</li>
+                <li>条件クリアで<span class="highlight">ATM手数料が最大月7回、他行振込手数料が最大月3回まで無料</span>に。無駄な支出を徹底的にカットできます。</li>
             </ul>
         </div>
 
-        <div class="point-box">
-            <h2>🔥 2つを連携させるとバグレベルでお得</h2>
-            <p style="font-size: 0.95rem; margin-bottom: 0;">楽天カードの引き落とし先を「楽天銀行」にするだけで、楽天市場でのお買い物がポイントアップするの！しかも銀行の普通預金の金利がメガバンクの何十倍にもなるから、ただお金入れとくだけでちょっと増える魔法みたいなお話🪄✨</p>
+        <!-- 連携の解説セクション -->
+        <div class="synergy-box">
+            <h3>2つを連携させる「最大のメリット」</h3>
+            <p>楽天カードの引き落とし口座を「楽天銀行」に設定するだけで、<br>楽天市場でのポイント還元率がアップ。さらに、普通預金金利が<br>メガバンクの数十倍に跳ね上がります。<br><strong>「ただ使うだけ・ただ預けるだけ」でお金が効率よく回る仕組み</strong>が完成します。</p>
         </div>
 
-        <a href="#" class="btn">今すぐ楽天カードを申し込む🏃‍♀️💨</a>
+        <!-- CTAエリア（アフィリエイトリンク設置想定） -->
+        <div class="cta-area">
+            <a href="#affiliate-link-here" class="cta-button">セットで申し込んで自立の準備を始める</a>
+        </div>
+
     </div>
+
 </body>
 </html>
